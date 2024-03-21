@@ -1,0 +1,394 @@
+html{
+    scroll-behavior: smooth;
+    z-index: -10000000;
+}
+
+body{
+    background-color: #eee;
+
+}
+
+:root
+{
+    --headgreen: rgb(27, 77, 27);
+    --backgreen: rgb(183, 207, 183);
+    --green: rgb(62, 150, 62); 
+    --black: #130f40;
+    --light_color:#666;
+}
+
+
+*{
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;         
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+
+/*heading style*/
+.heading{
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+.heading span{
+    border: 2px solid var(--headgreen);
+    padding: 5px;
+    color: var(--green);
+    display: inline block;
+    border-radius: 10px;
+    /*clip path generator*/
+    /*clip-path: polygon(0 26%, 100% 26%, 79% 53%, 100% 75%, 0 75%, 20% 55%);*/
+
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 1.5rem 1.5rem;
+    box-shadow: 0rem 0.001rem 5rem rgb(174, 209, 174);
+}
+
+.header .logo{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: var(--headgreen);
+}
+
+.header .logo i{
+    color: var(--headgreen);
+}
+
+.header .navbar a{
+    font-size: 1rem;
+    margin: 0rem 1rem;
+    color: var(--green);
+}
+
+.header .navbar a:hover{
+    font-size: 1.1rem;
+    margin: 0rem 1.5rem;
+    color: var(--headgreen);
+
+}
+
+.header .icons div{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 5px;
+    background-color: var(--green);
+    margin: 0.2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    color: white;
+}
+.header .icons div:hover{
+    border: 1px solid var(--green);
+    background-color: white;
+    color: var(--green);
+    cursor: pointer;
+}
+
+#bar{
+    display: none;
+}
+.btn{
+    height: 2.5rem;
+    width: 8rem;
+    border-radius: 10px;
+    padding: 8px 8px;
+    text-align: center;
+    background-color: var(--green);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    border: 1px solid var(--green);
+    background-color: white;
+    color: var(--green);
+    cursor: pointer;
+}
+
+.home{
+    padding: 10rem 10rem;
+    border: 1px solid black;
+    /*pic from unsplash*/
+    background-image: url(https://images.unsplash.com/photo-1490818387583-1baba5e638af?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.content{
+    padding-left: 30rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    margin: 1px;
+    font-size: larger;
+}
+
+.content h3{
+    font-size: 2rem;
+    padding-bottom: 20px;
+
+}
+
+.content h3 span{
+    font-size: 2rem;
+    padding-bottom: 20px;
+    color: var(--headgreen);
+}
+
+
+.content p{
+    font-size: 1rem;
+    padding-bottom: 30px;
+    line-height: 1.7rem;
+}
+
+.photo{
+    height: 10rem;
+    width: 10rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.container{
+    padding: 70px;
+    display: flex;
+}
+
+.box{
+    padding: 20px 10px;
+    text-align: center;
+    border: 10px solid var(--backgreen);
+    outline: 1px solid black;
+    outline-offset: -15px;
+
+}
+
+.box p{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 1.5rem;
+    padding-bottom: 20px;
+}
+
+.container :hover{
+    background-color: var(--backgreen);
+}
+
+.prd_slider1{
+    display: flex;
+    padding: 70px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+.prd_slider1 .box{
+    height: 20rem;
+    width: 100rem;
+}
+
+.box h3{
+    color: var(--headgreen)
+}
+
+.box h4{
+    padding: 10px;
+}
+
+.prd_slider2{
+    display: flex;
+    padding: 70px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.prd_slider2 .box{
+    height: 20rem;
+    width: 100rem;
+}
+.slider{
+    padding: 70px;
+}
+
+.cat_container{
+    padding-right: 70px;
+    display: flex;
+    padding-bottom: 70px;
+    padding-top: 70px;
+    padding-left: 70px;
+    column-gap: 1px;
+    justify-content: center;
+ }
+.catg_img{
+    height: 20rem;
+    width: 20rem;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.catg{
+    padding: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.catg h2{
+    color: rgb(10, 41, 22);
+    text-align: center;
+    padding: 10px;
+}
+
+.footer{
+    background-color: white;
+    padding: 10px;
+}
+.foot{
+    padding: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    column-gap: 10px;
+}
+
+.abt,.contact,.qlink,.newsletter{
+    height: 20rem;
+    width: 20rem;
+    padding: 10px;
+
+    text-align: center;
+}
+
+.footersyl{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.abt .logo{
+    color: var(--headgreen);
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.abt p{
+    line-height: 25px;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.abt .icon{
+    font-size: 40px;
+    color: var(--backgreen);
+}
+
+.abt .icon :hover{
+    font-size: 40px;
+    color: var(--headgreen);
+}
+
+.flex{
+    display: flex;
+    padding: 20px 20px;
+    justify-content: center;
+}
+
+.flex div{
+    font-size: 30px;
+    padding-right: 10px;
+    color: var(--headgreen);
+}
+
+.qlink{
+    font-size: large;
+}
+
+.qlink .links a{
+    color: var(--headgreen);
+    line-height: 60px;
+}
+
+.qlink .links a:hover{
+    color: rgb(9, 65, 9);
+    line-height: 60px;
+    font-size: 20px;
+}
+
+.footer{
+    font-family: "Akshar", sans-serif;
+}
+
+ul li {
+    list-style: none; /* Remove bullets */
+}
+
+.newsletter p{
+    line-height: 100px;
+}
+.newsletter input{
+    height: 50px;
+    width: 20rem;
+    border-radius: 100px;
+}
+
+.newsletter ::placeholder{
+    color:var(--backgreen);
+    text-align: center;
+    font-size: 10px;
+}
+
+.endnote{
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/**
+.up{
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+
+
+
+.up a{
+    border: 2px solid var(--headgreen);
+    width: 30px;
+    height: 20px;
+    border-radius: 100px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--green);
+}
+**/
